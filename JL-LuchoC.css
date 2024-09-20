@@ -216,6 +216,7 @@ h1{
     text-wrap: balance;
 }
 .profile__social-media{
+    margin: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,12 +224,34 @@ h1{
     width: 50dvw;
     gap: 7dvw;
 }
-.redes{
+.redes {
+    text-decoration: none;
     font-size: 1.8rem;
     color: var(--color-fuert);
 }
-.redes:active{
+.profile__cv{
+    margin-top: 1rem;
+}
+
+#cv{
+    text-decoration: none;
+    font-style: italic;
+    color: var(--color-fuert);
+}
+.curriculum, .curriculum:visited, .curriculum:active{
+
+    color: var(--color-fuert);
+    text-decoration: none;
+    font-size: small;
+}
+
+#cv_icono{
+    margin-bottom: 0;
+    padding-bottom: 0px;
+}
+.redes:active {
     transform: scale(1.1);
+    font-weight:900;
     text-shadow: 0px 0px 2px var(--color-fuert);
 }
 .profile__skill{
@@ -551,5 +574,3 @@ footer{
     color: var(--color-claro);
     padding: 50px 30px;
 }
-
-
