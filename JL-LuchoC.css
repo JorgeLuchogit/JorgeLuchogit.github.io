@@ -354,7 +354,7 @@ h1 {
         left: 36%;
         max-width: 400px ;
         width: 45dvw;
-        height: 62dvh;
+        height: 64dvh;
         z-index: 5;
         background-color: var(--color-claro);
         clip-path: polygon(5% 8%, 0 0, 100% 0, 100% 100%, 5% 100%);
