@@ -146,17 +146,10 @@ body, div, ul, nav, header, footer, a, li, label{
     /*border: 1px solid black;*/
 }
 .profile__button, .profile__button-label{
-    display: none;
+    display: none;  
+    cursor: pointer;  
 }
-.profile__data{
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    margin: 12px;
-}
-/*.profile__data-container{
-    border: 1px solid green;
-}*/
+
 .profile__cortina{
     justify-content: center;
     flex-direction: column;
@@ -187,23 +180,16 @@ body, div, ul, nav, header, footer, a, li, label{
     overflow: hidden;
     /*border: 1px solid red;*/
 }
-h1, .profile__skills-container h2 {
+h1 {
     margin: 15px;
     padding: 10px;
     color: var(--color-fuert);
-}
-h1{
     margin-top: 0;
     text-wrap: balance;
     text-align: center;
     font-size: 2.6rem;
 }
-.profile__skills-container h2{
-    font-size: min(2.5rem,4.8dvh);
-    width: 100%; 
-    margin: 0;
-    text-align: center;
-}
+
 .profile__description{
     justify-content: center;
     flex-direction: column;
@@ -214,6 +200,7 @@ h1{
 .profile__description p{
     text-align: justify;
     text-wrap: balance;
+
 }
 .profile__social-media{
     margin: 20px;
@@ -230,7 +217,14 @@ h1{
     color: var(--color-fuert);
 }
 .profile__cv{
+    position: absolute;
+    bottom: 8%;
     margin-top: 1rem;
+    z-index: 10;
+}
+.profile__cv + div{
+    position: absolute;
+    bottom: 5%;
 }
 
 #cv{
@@ -254,51 +248,133 @@ h1{
     font-weight:900;
     text-shadow: 0px 0px 2px var(--color-fuert);
 }
-.profile__skill{
-    flex-direction: column-reverse;
-    align-items: center;
-    max-width: 600px;
-    display: flex;
-    margin: 5px;
-    list-style: none;
+.profile__foto{
+    margin-top: 4dvh;
+    border: var(--color-claro) 5px solid;
+    box-shadow: 0px 0px 5px 0px var(--color-fuert);
+    border-radius: 100%;
+    overflow: hidden;
+    width: 25dvh;
+    height: 25dvh;
 }
-.profile__skill-name{
-    font-size: min(2.3dvh,0.9rem);
-    color: var(--color-fuert);
+.profile__foto > img {
+    position: relative;
+    top: -18%;
+    left: -14%;
+    width: 30dvh;
+    height: 40dvh;
 }
-.load-bar{
-    padding: 2px;
-    margin: 2px;
-    width: 80%;
-    color: var(--color-claro);
-    font-size: min(1.5dvh, 0.6rem); 
-    background-image: linear-gradient(var(--color-claro),var(--color-inter));
-    border: 1px solid var(--color-fuert);
-    border-radius: 8px;
+.lenguaje-barra-contenedor{
+    border-radius: 5px;
+    background-color:var(--color-fuert);
+    width: 70%;
+    height: 4dvh; 
+    padding: 4px;
+    margin-bottom: 25px;
 }
-.load-bar__bar{
-    padding: 4px 6px;
-    background-color: var(--color-fuert);
-    border-radius: 4px;
+.lenguaje-barra{
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding-left: 5px;
+    height: 100%;
+    width: 2%;
+    background-color: var(--color-inter);
+    border-radius: 3px;
 }
-.--80{
-    width: 80%;
+.lenguaje-label{
+    filter: sepia(100%);
 }
- .--70{
-    width: 60%;
- }
- .--60{
-    width: 60%;
-}
+#exp{
+    font-weight: bolder;
+    height: 7%;
+    min-width: 20px;
+    justify-content:end;
 
+}
 @container profile (min-width:600px){
+    .boton-cerrarLen{
+        position: absolute;
+        padding: 7px;
+        border-radius: 5px;
+        top: 2%;
+        right: 2%;
+        color: white;
+        background-color: var(--color-fuert);
+    }
+    input[type='radio'] {
+        display: none;
+    }
+     
+    .lenguaje-barra{
+        transition: width ease-in 0.2s;
+    }
+    .lenguaje-label:hover, input[type='radio']:checked + label, .boton-cerrarLen:hover{
+        transform: scale(1.25);
+        filter: sepia(0%) drop-shadow(0px 0px 5px var(--color-fuert));
+        cursor: pointer;
+        
+    }
+    .profile__foto:hover{
+        transform: scale(0.9);
+        box-shadow: 0px 0px 20px 0px var(--color-fuert);
+        cursor: pointer;
+    }
+    .lenguaje-mensaje{
+        width: 90%;
+        height: 35%;
+        border-radius: 7px;
+        background-color: var(--color-inter);
+    }
+    .lenguaje-mensajeTitulo{
+        text-align: center;
+        color: var(--color-claro);
+        border-radius: 7px 7px 0px 0px;
+        background-color: var(--color-fuert);
+    }
+    .lenguaje-mensajeContenido{
+        text-align: justify;
+        font-size: 0.75rem;
+        padding: 10px;
+        height: 80%;
+        overflow: auto;
+    }
+    h3{
+        margin-top: 10px;
+    }
+    .lenguajes{
+        overflow: auto;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: absolute;
+        border-radius: 7px;
+        padding: 20px;
+        padding-left:35px ;
+        top: 10%;
+        left: 36%;
+        max-width: 400px ;
+        width: 45dvw;
+        height: 62dvh;
+        z-index: 5;
+        background-color: var(--color-claro);
+        clip-path: polygon(5% 8%, 0 0, 100% 0, 100% 100%, 5% 100%);
+    }
+    .lenguajes-contenedor{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 5dvh);
+        justify-items: center;
+        justify-content:center;
+        gap: 16px;
+        margin: 20px 0px;
+    }
     .profile__wrapper{
         position: relative;
         flex-direction: row-reverse ;
         justify-content: center;
         max-width: 900px;
-        min-height: 85dvh;
-        margin-top: 3dvh;
+        height: 87dvh;
+        margin-top: 2dvh;
         margin-bottom: 3dvh;
         width: 90dvw;
         box-shadow: 0px 1px 15px #41332171;
@@ -316,9 +392,9 @@ h1{
     }
     .profile__data-container{
         position: relative;
-        z-index: -20;
-        justify-content: center;
-        flex-direction: row;
+        z-index: 0;
+        justify-content: start;
+        flex-direction: column;
         align-items: center;
         display: flex;
         max-height: 100%;
@@ -332,7 +408,19 @@ h1{
         background-color: var(--color-inter);
     }
     .profile__description p{
-        padding: 15px;
+        width: 90%;
+        padding: 5px;
+    }
+    .profile__presentacion{
+        overflow:auto;
+        width: 90%;
+        height: 40%;
+    }
+    .profile__presentacion p{
+        height: 100%;
+    }
+    .profile__img-container{
+        z-index: 1;
     }
     h1{
         text-align: left;
@@ -360,10 +448,16 @@ h1{
         padding: 0;
         border: none;
         font-size: min(3.2dvh, 1.5rem);
-        z-index: -2;
+        display: none;
     }
     .profile__cortina:hover {
         backdrop-filter: blur(10px) sepia(100%) contrast(100%);    
+    }
+    .profile__cortina:hover > .profile__frase {
+        display: block;    
+    }
+    .profile__cortina:hover > .profile__autor {
+        display: block;    
     }
     .profile__button, .profile__button-label{
         position: absolute;
@@ -382,28 +476,16 @@ h1{
         background-color: var(--color-inter);
         transition: right 0.6s ease, clip-path, 0.7s ease;
     }
-    .--80, .--70, .--60{
-        width: 0%;
-        transition: width 0.5s  0.2s;
-    }
     #skills:checked ~ .profile__img-container{
         left: 50%;
         border-radius:  0px 30px 30px 0px;
-    }   
+    }  
     #skills:checked ~ .profile__button-label{
         right: 43%;
         clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%)
     
     }   
-    #skills:checked ~ .profile__data-container .--80 {
-        width: 80%;;
-    }      
-    #skills:checked ~ .profile__data-container .--60 {
-        width: 60%;;
-    }      
-    #skills:checked ~ .profile__data-container .--70 {
-        width: 70%;;
-    }      
+      
 }
 /* ----------------- PROFILE END -----------------------*/
 /* ----------------- PORTAFOLIO -----------------------*/
