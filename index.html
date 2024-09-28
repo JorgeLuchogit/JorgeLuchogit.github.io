@@ -8,7 +8,8 @@
     <link rel="icon" href="Imagenes/Logo_icono.png" type="=image/png">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
-    <title>JL-Lucho Cervantes</title> 
+    <title>JL-Lucho Cervantes</title>
+    
 </head>
 <body id="profile">
     <header class="header">
@@ -20,12 +21,12 @@
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item">
-                    <a href="#profile" class="material-symbols-outlined" title="Inicio">Home</a>
+                    <a href="#profile" class="material-symbols-outlined" title="Inicio" id="homeLink">Home</a>
                     <a href="#profile" class="header__link">Inicio</a> 
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="material-symbols-outlined" title="Sobre mi">Person_Book</a>
-                    <a href="#" class="header__link">Sobre mi</a>
+                    <a href="#profile" class="material-symbols-outlined" title="Sobre mi" id="SobreMiLink">Person_Book</a>
+                    <a href="#profile" class="header__link">Sobre mi</a>
                 </li>
                 <li class="header__nav-item">
                     <a href="#portafolio" class="material-symbols-outlined" title="Mi trabajo" >Work </a>
@@ -39,11 +40,10 @@
         </nav>
     </header>
     <main class="profile" >
-        <!--<input type="checkbox" class="profile__button" id="skills"> <label class="profile__button-label" for="skills">Unos datos</label> </input>-->
         <div class="profile__wrapper">
             <div class="profile__description">
                 <h1>JL-Lucho Cervantes</h1>
-                <p>Bienvenido a mi página personal, soy Jorge Luis Lucho Cervantes, Físico en proceso de titulación, de la Facultad de ciencias  UNAM. En principio creé esta página para aprender HTML y CSS. El resultado me gustó y se quedó.    
+                <p>Bienvenido a mi página personal, Mi nombre es Jorge Luis Lucho Cervantes. En principio creé esta página para aprender HTML y CSS. El resultado me gustó y se quedó.<br><br> Aquí encontrarás algunos de los proyectos en los que he estado trabajando.  
                 </p>
                 <div class="profile__social-media">
                     <a class="redes" href="https://www.linkedin.com/in/jorge-luis-lucho-cervantes-804b30323/" target="_blank" rel="nopener noreferer nofolow"><i class="fa-brands fa-linkedin"></i></a>
@@ -51,12 +51,9 @@
                     <a class="redes" href="https://facebook.com/jorge.cmg?mibextid=ZbWKwL" target="_blank" rel="nopener noreferer nofolow"><i class="fa-brands fa-facebook"></i></a>
                     <a class="redes" href="https://www.instagram.com/jllucho?igsh=MXBzeHNkMmtsNTZxaQ==" target="_blank" rel="nopener noreferer nofolow"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                <div class="profile__cv">
-                    <a id="cv" href="Documentos/JL_LuchoCV.pdf" target="_blank" rel="nopener noreferer nofolow" title="ver currículum de JL.Lucho Cervantes"><p class="material-symbols-outlined" id="cv_icono">Description</p></a>
-                </div>
-                <div><a class="curriculum" href="Documentos/JL_LuchoCV.pdf" target="_blank" rel="nopener noreferer nofolow" title="ver currículum de JL.Lucho Cervantes">Currículum </a></div>
+                <div><a class="curriculum" href="Documentos/JL_LuchoCV.pdf" target="_blank" rel="nopener noreferer nofolow" title="ver currículum de JL.Lucho Cervantes">Currículum </a></div> -->
             </div>
-            <input type="checkbox" class="profile__button" id="skills"> <label class="profile__button-label" for="skills">X</label> </input>
+            <input type="checkbox" class="profile__button" id="skills"> <label class="profile__button-label" for="skills" >X</label> </input>
             <div class="profile__img-container">
                 <!--<img src="Imagenes/octocedron.jpg" alt="Foto de perfil" class="profile__img">-->
                 <div class="profile__cortina">
@@ -65,61 +62,68 @@
                 </div>
             </div>
             <div class="profile__data-container">
-                <div class="profile__data">
-                    <div class="profile__skills-container">
-                        <h2>Conocimientos de programación</h2>
-                        <ul>
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar --80">80%</div>
-                                </div>
-                                <span class="profile__skill-name">Python</HTML></span>
-                            </li>
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar --70">70%</div>
-                                </div>
-                                <span class="profile__skill-name">R</HTML></span>
-                            </li>
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar --70">70%</div>
-                                </div>
-                                <span class="profile__skill-name">SQL (SQLite)</HTML></span>
-                            </li>
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar --60">60%</div>
-                                </div>
-                                <span class="profile__skill-name">HTML</HTML></span>
-                            </li>
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar --70">70%</div>
-                                </div>
-                                <span class="profile__skill-name">CSS</HTML></span>
-                            </li>
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar --80">80%</div>
-                                </div>
-                                <span class="profile__skill-name">Látex</HTML></span>
-                            </li>
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar --60">60%</div>
-                                </div>
-                                <span class="profile__skill-name">Fortran, C++</HTML></span>
-                            </li>
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar --70">70%</div>
-                                </div>
-                                <span class="profile__skill-name">Gnupplot, Qtplot</HTML></span>
-                            </li>
-                        </ul>
+                <button class="abrirLen" id="abrirLen" style="display: none;"></button>
+                <label for="abrirLen" class="boton-abrirLen">
+                    <div class="profile__foto">
+                        <img src="Imagenes/FotoPerfil.jpg" alt="Imágen no encontrada" title="Click para un mensaje">
                     </div>
+                </label>
+                <h3>Sobre mi:</h3>
+                <div class="profile__description profile__presentacion">
+                    <p><b style="font-size: xx-large;">E</b>studiante de física en proceso de titulación, de la Facultad de Ciencias UNAM. Realicé mi servicio social Y trabajo de tesis de licenciatura en el Instituto de Física de la UNAM.
+                    <br><br>
+                    Mi formación académica me ha dotado de una sólida base en análisis matemático y pensamiento crítico, habilidades esenciales para abordar desafíos de cualquier índole.
+                    <br><br>
+                    Estoy muy familiarizado con el análisis de datos y actualmente estoy interesado en los fundamentos y aplicaciones del Machine Learning y Deep Learning.
+                    </p>
                 </div>
+                <div class="profile__cv">
+                    <a id="cv" href="Documentos/JL_LuchoCV.pdf" target="_blank" rel="nopener noreferer nofollow" title="ver currículum de JL.Lucho Cervantes"><p class="material-symbols-outlined" id="cv_icono">Description</p></a>
+                </div>
+                <div><a class="curriculum" href="Documentos/JL_LuchoCV.pdf" target="_blank" rel="nopener noreferer nofollow" title="ver currículum de JL.Lucho Cervantes">Currículum </a></div>
+            </div>
+        </div>
+        <div class="lenguajes" id="lenguajes" style="display: none;">
+            <button class="cerrarLen" id="cerrarLen" style="display: none;"></button>
+        <label for="cerrarLen" class="boton-cerrarLen" title="Cerrar mensaje">X</label>
+            <h3 style="margin: 0;">Skills:</h3>
+            <div class="lenguajes-contenedor">
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje1"><label for="lenguaje1" class="lenguaje-label">
+                    <img width=40 height=40 title='Python' src="https://skillicons.dev/icons?i=py"/>
+                </label>
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje2"><label for="lenguaje2" class="lenguaje-label">
+                    <img width=40 height=40 title='R' src="https://skillicons.dev/icons?i=r"/>
+                </label>
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje3"><label for="lenguaje3" class="lenguaje-label">
+                    <img width=40 height=40 title='C++' src="https://skillicons.dev/icons?i=cpp"/>
+                </label>
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje4"><label for="lenguaje4" class="lenguaje-label">
+                    <img width=40 height=40 title='Fortran' src="https://skillicons.dev/icons?i=fortran"/>
+                </label>
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje5"><label for="lenguaje5" class="lenguaje-label">
+                    <img width=40 height=40 title='Látex' src="https://skillicons.dev/icons?i=latex"/>
+                </label>
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje6"><label for="lenguaje6" class="lenguaje-label">
+                    <img width=40 height=40 title='HTML' src="https://skillicons.dev/icons?i=html"/>
+                </label>
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje7"><label for="lenguaje7" class="lenguaje-label">
+                    <img width=40 height=40 title='CSS' src="https://skillicons.dev/icons?i=css"/>
+                </label>    
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje8"><label for="lenguaje8" class="lenguaje-label">
+                    <img width=40 height=40 title='Javascript' src="https://skillicons.dev/icons?i=js"/>
+                </label>    
+                </label>    
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje9"><label for="lenguaje9" class="lenguaje-label">
+                    <img width=40 height=40 title='SQLite' src="https://skillicons.dev/icons?i=sqlite"/>
+                </label>    
+            </div> 
+            <div id="exp"></div>
+            <div class="lenguaje-barra-contenedor">
+                <div class="lenguaje-barra" id="lenguaje-barra"></div>
+            </div>
+            <div class="lenguaje-mensaje">
+                <div class="lenguaje-mensajeTitulo">Details</div>
+                <div class="lenguaje-mensajeContenido" id="mensajeTitulo"></div>
             </div>
         </div>
     </main>
@@ -158,5 +162,6 @@
         </form>
     </section>
     <footer> <strong>JL-Lucho Cervantes</strong>- Copyright</footer>
+    <script src="JL-LuchoC.js"></script>
 </body>
 </html>
