@@ -50,7 +50,7 @@ for (radio of lenguajeRadiusList){
         x = seleccionado;
         barra.style.width = lenguajeDiccionario[seleccionado][1];
         barra.innerHTML = lenguajeDiccionario[seleccionado][1];
-        experiencia.innerHTML = lenguajeDiccionario[seleccionado][0] + " Experience:";
+        experiencia.innerHTML = " Experiencia:" + lenguajeDiccionario[seleccionado][0];
         mensajeTitulo.innerHTML = lenguajeDiccionario[seleccionado][2]
 
     });
