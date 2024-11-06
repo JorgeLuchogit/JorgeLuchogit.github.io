@@ -1,0 +1,44 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: rgb(165, 255, 240);
+	font-family: Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+.spinner{
+
+  width: 50px;
+  height: 50px;
+  border: 12px solid rgb(248, 248, 248);
+  border-left-color: rgb(98, 60, 202);
+  border-radius: 50%;
+  animation: spin 2s linear  infinite;  
+}
+@keyframes spin {
+  0% {
+      transform: rotate(0deg) scale(1);
+    }  
+    50%{
+      transform: rotate(180deg) scale(1.1) ;
+    }    
+    100% {
+      transform: rotate(360deg) scale(1); 
+  }   
+}
+
