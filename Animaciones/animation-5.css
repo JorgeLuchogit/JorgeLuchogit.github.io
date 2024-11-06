@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+
+.frame {
+  --winsow-size:400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #000000;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.spheres {
+  width: 100%;
+  height: 100%;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+}
+.sphere{
+  position: fixed;
+  width: var(--width);
+  height: var(--height);
+  /* animation: sphere-motion 30s linear infinite; */
+  animation: sphere-motion 50s linear infinite;
+  animation-delay: var(--delayTime);  
+}
+.sphere:last-child{
+  animation-direction:reverse ;
+  filter: blur(5px);
+}
+.sphere:first-child{
+  animation-direction:reverse ;
+}
+
+@keyframes sphere-motion {
+  0%{
+    transform:   translateX(0) translateY(0);
+    border-radius: 0px;
+    /* backdrop-filter: invert(0); */
+  }
+  35%{
+    transform:  translateX(calc(var(--winsow-size) - var(--width))) translateY(0);
+  }
+  50%{
+    transform: translateX(calc(var(--winsow-size) - var(--width))) translateY(calc(var(--winsow-size) - var(--height)));
+    border-radius: 100px;
+    /* backdrop-filter: invert(100%); */
+  }
+  85%{
+    transform:  translateX(0) translateY(calc(var(--winsow-size) -  var(--height)));
+  }
+  100%{
+    transform:   translateX(0) translateY(0);
+    border-radius: 0px;
+    /* backdrop-filter: invert(0); */
+  }
+}

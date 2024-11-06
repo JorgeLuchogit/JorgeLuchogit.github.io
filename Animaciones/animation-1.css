@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: #ffffff;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.animacion{
+    /* left: calc(50% - 150px);
+    top: calc(50% - 170px); */
+    margin-top: 15%;
+    
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateX(60deg) rotateZ(-55deg);
+}
+.anillo{
+    position: absolute;
+    background-color: #47bee2;
+    color: wheat;
+    display: block;
+    box-shadow: 300px 0px 15px rgb(65, 65, 65);
+    /* border: 5px solid #e732de; */
+    /* box-shadow: 0 5px 0px #6130af; inset: 0 5px 0 #6130af; */
+    border-radius: 50%;
+    animation: ondita 3s ease-in-out infinite;
+
+}
+@keyframes ondita {
+    0%, 100%{
+        filter: hue-rotate(0deg);
+        transform: translateZ(-100px);
+        /* transform: rotateZ(0deg); */
+    }
+    50%{
+        filter: hue-rotate(110deg);
+        transform: translateZ(100px);
+        /* transform: rotateZ(360deg); */
+    }
+}

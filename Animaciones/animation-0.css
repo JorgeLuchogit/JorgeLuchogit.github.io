@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+
+.frame {
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  font-size: 80px;
+	overflow: hidden;
+  margin-top: -200px;
+  position: absolute;
+  border-radius: 2px;
+  margin-left: -200px;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0);
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+@property --rotate{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.center {
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--rotate) at 29% 10%, black 40%, rgb(61, 168, 255), black 60%);
+  color:transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: rotate 3s ease-in-out infinite alternate;
+}
+
+.heart{
+  position: relative;
+  transform: rotate(45deg) translateY(4px) translateX(4px);
+  background-color:red;
+  width: 35px;
+  height: 35px;
+  animation: heart-animation 1s ease-in-out infinite alternate;
+}
+.heart::after, .heart::before{
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: red;
+  border-radius: 50%;
+  animation: heart-animation 2s ease-in-out infinite alternate;
+}
+.heart::after{
+  right: 50%;
+}
+.heart::before{
+ bottom: 50%;
+}
+.ale{
+  padding-left: 20px;
+}
+@keyframes rotate {
+  from{
+    --rotate: 0.15turn;
+  }
+  to{
+    --rotate: -0.30turn;
+  }
+}
+@keyframes heart-animation{
+  from{
+    box-shadow: 0px 0px 0px red;
+  }
+  to{
+    box-shadow: 0px 0px 30px red;
+  }
+}
