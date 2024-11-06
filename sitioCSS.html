@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noimageindex noindex noarchive nosnippet nofollow">
+    <link rel="icon" href="Imagenes/Logo_icono.png" type="=image/png">
+    <link rel="stylesheet" href="sitioCSS.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="spheres">
+        <div class="sphere" style="--width: 30%; --height: 50%; --delayTime:-10s; background-color: rgba(44, 44, 44, 0.3);"></div>
+        <div class="sphere" style="--width: 10%; --height: 30%; --delayTime:-20s; background-color: rgb(0, 119, 255, 0.3);"></div>
+        <div class="sphere" style="--width: 20%; --height: 50%; --delayTime:-30s; background-color: rgb(204, 0, 255, 0.3);"></div>
+        <div class="sphere" style="--width: 30%; --height: 35%; --delayTime:-40s; background-color: rgb(74, 0, 117, 0.3);"></div>
+        <div class="sphere" style="--width: 15%; --height: 20%; --delayTime:-50s; background-color: rgb(88, 219, 0, 0.3);"></div>
+        <div class="sphere" style="--width: 40%; --height: 50%; --delayTime:0s; background-color: rgb(251, 255, 0, 0.3);"></div>
+        <div class="sphere" style="--delaytime:5s; --width: 20%; --height: 30%; opacity: 0.3; "><img src="Imagenes/Logom.png" alt="" style="width: 500px; height: 500px;"  ></div>
+        <div class="sphere" style="--delaytime:20s; --width: 20%; --height: 30%; opacity: 0.1; "><img src="Imagenes/Logom.png" alt="" style="width: 500px; height: 500px;"  ></div>        
+    </div>
+    <div class="cortain">
+        <header>
+            <div class="logo"><img src="Imagenes/Logo_icono.png" alt="JL-Lucho Cervantes logo" style="height: 70px; width: 70px; margin-top: 30px;"></div>
+            <div class="regreso">
+                <a id="regreso-icono" href="index.html"  rel="nopener noreferer nofolow" title="Ir a la página principal">
+                    <p class="material-symbols-outlined">home</p>
+                </a>
+            </div>
+        </header>
+        <main>
+            <aside>
+                <div class="title">
+                    <h1>Librería de CSS</h1>
+                </div>
+                <div class="presentation">
+                    Aquí coloco todos los objetos HTML+CSS+JS que voy realizando.
+                </div>
+                <div class="square">
+                    <div class="sections-bar">
+                        <input type="radio" name="section-radio" class="section" id="section-2"><label class="section-radio-label" for="section-2" style="border-radius: 7px 0px 0px 0px;">Animaciones</label>
+                        <input type="radio" name="section-radio" class="section" id="section-1"><label class="section-radio-label" for="section-1">100 días de CSS</label>
+                        <input type="radio" name="section-radio" class="section" id="section-3"><label class="section-radio-label" for="section-3" style="border-radius: 0px 7px 0px 0px;">Componentes</label>
+                    </div>
+                    <div class="slicer-menu" id="slicer-menu">
+                        <div id="oneHundred" style="display:none;">
+                            <p> Soluciones al <b><a href="https://100dayscss.com/about/" rel="nopener noreferer nofolow" title="Ir a 100 days css">100 days css challenge</a></b></p>
+                            <div class="days">
+                                <label for="day-select" id="day-select-label">Día</label>
+                                <select name="days" id="day-select" onchange="choseDay();">
+                                </select>
+                            </div>
+                        </div>
+                        <div id="animations" style="display: none;">
+                            <p>Animaciones que he ocupado en mis proyectos o que me ha parecido interesante hacer</p>
+                            <div class="item_selections" id="item_selections"></div>
+                        </div>
+                        <div id="components" style="display: none;">
+                            <p>Elementos de una página web estilizados o animados</p>
+                            <div class="item_selections" id="item_selections2"></div>
+                        </div>                    
+                    </div>
+                </div>
+            </aside>
+            <article>
+                <div class="codes" id="codes">
+                    <input type="radio" name="code-radio" class="language" id="html"><label class="code-radio-label" for="html" style="border-radius: 7px 0px 0px 0px;">HTML</label>
+                    <input type="radio" name="code-radio" class="language" id="css"><label class="code-radio-label" for="css">CSS</label>
+                    <input type="radio" name="code-radio" class="language" id="js"><label class="code-radio-label" for="js" style="border-radius: 0px 7px 0px 0px;">JS</label>
+                </div>
+                <div class="component_container">
+                    <div class="component" id="component-box">
+                        <p style="color: rgb(129, 129, 129); position: absolute; top: 40%; left: 35%;">Elija un componente</p>
+                        </div>
+                    </div>
+                </div>              
+            </article>
+            <div class="codes-container">
+                <div class="lenguage-code" id="html_language">
+                    <div class="language-title">
+                        <div class="language-menu">
+                            
+                        </div>
+                    </div>
+                </div>
+                <script src="sitioCSS.js" ></script>
+                <div class="lenguage-code" id="css_language"></div>
+                <div class="lenguage-code" id="js_language"></div>
+            </div>
+        </main>       
+    </div>
+</body>
+<footer class="footer">
+    <div class="footerTop">
+        <div class="container">
+            <div class="firstCol">
+                <a href="#" class="redes_footer">Redes sociales</a>
+                <ul class="icons">
+                    <li><a class="redes_footer" href="https://www.linkedin.com/in/jorge-luis-lucho-cervantes-804b30323/" target="_blank" rel="nopener noreferer nofolow"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a class="redes_footer" href="https://github.com/JorgeLuchogit" target="_blank" rel="nopener noreferer nofolow"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a class="redes_footer" href=""  rel="nopener noreferer nofolow"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a class="redes_footer" href=""  rel="nopener noreferer nofolow"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="secondCol">
+                <ul class="menu">
+                    <li><h4>Principal</h4></li>
+                    <li><a href="index.html#profile" target="_blank" rel="nopener noreferer nofolow" title="Ir a la página principal" id="SobreMiLinkFoot">Sobre mi</a></li>
+                    <li><a href="index.html#portafolio" target="_blank" rel="nopener noreferer nofolow" title="Ir a mi portafolio">portafolio</a></li>
+                    <li><a href="index.html#form" target="_blank" rel="nopener noreferer nofolow" title="Ir a formulario de contacto">Contacto</a></li>
+                </ul>
+                <ul class="menu">
+                    <li><h4>Otros proyectos</h4></li>
+                    <li><a href="notas.html" target="_blank" rel="nopener noreferer nofolow" title="Ir al sitio de Notas">Sitio de notas</a></li>
+                    <li><a href="DataScience.html"  target="_blank" rel="nopener noreferer nofolow" title="Ir al sitio de proyectos">Proyectos de Data science</a></li>
+                    <li><a href="#">Sitio sobre Física</a></li>
+                </ul>
+                <ul>
+                    <li><h4>información de contacto</h4></li>
+                    <li><address>Cuatitlán izcalli edo. Méx. México</address></li>
+                    <li><a href="mailto:" title="Correo de contacto">jllcmaf6@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="thirdCol">
+                <h4 style="text-transform: none;">Librería de CSS</h4>
+                <p style="hyphens: auto; text-align: justify;"> En este sitio se muestran objetos desarrollados con HTML, CSS y/o JS. El sitio apenas está en una fase temprana, se espera poder compartir de manera dinámica el código fuente del material aquí mostrado.El presente sitio web fué Hecho en México por Jorge Luis Lucho Cervantes.</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="container">
+            <p>&copy; 2024 <strong>JL-Lucho Cervantes</strong> - Todos los derechos reservados</p>
+        </div>
+    </div>
+</footer>
+</html>

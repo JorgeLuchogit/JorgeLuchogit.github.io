@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noimageindex noindex noarchive nosnippet nofollow">
+    <link rel="stylesheet" href="JL-LuchoC.css">
+    <link rel="icon" href="Imagenes/Logo_icono.png" type="=image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <title>JL-Lucho Cervantes</title>  
+</head>
+<body id="profile">
+    <header class="header">
+        <input type="checkbox" class="header__checkbox" name="open-menu" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__logo-container">
+            <img src="Imagenes/Logom.png" alt="logo JL-Lucho Cervantes" class="header__logo">
+        </div>
+        <nav class="header__nav" id="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="#profile" class="material-symbols-outlined" title="Inicio" id="homeLink">Home</a>
+                    <a href="#profile" class="header__link">Inicio</a> </label>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#profile" class="material-symbols-outlined" title="Sobre mi" id="SobreMiLink">Person_Book</a>
+                    <a href="#profile" class="header__link">Sobre mi</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#portafolio" class="material-symbols-outlined" title="Portafolio" >Work </a>
+                    <a href="#portafolio" class="header__link">Portafolio</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#form" class="material-symbols-outlined" title="Contacto">Call</a>
+                    <a href="#form" class="header__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="profile" >
+        <div class="profile__wrapper">
+            <div class="profile__description">
+                <h1>JL-Lucho Cervantes</h1>
+                <p>Bienvenido a mi página personal, Mi nombre es Jorge Luis Lucho Cervantes. Comencé esta página como un ejercicio de HTML y CSS, el resultado me gustó y se quedó.<br><br> Aquí se encuentran algunos de los proyectos en los que he estado trabajando.  
+                </p>
+                <div class="profile__social-media">
+                    <a class="redes" href="https://www.linkedin.com/in/jorge-luis-lucho-cervantes-804b30323/" target="_blank" rel="nopener noreferer nofolow"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="redes" href="https://github.com/JorgeLuchogit" target="_blank" rel="nopener noreferer nofolow"><i class="fa-brands fa-github"></i></a>
+                    <a class="redes" href="https://facebook.com/jorge.cmg?mibextid=ZbWKwL" target="_blank" rel="nopener noreferer nofolow"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="redes" href="https://www.instagram.com/jllucho?igsh=MXBzeHNkMmtsNTZxaQ==" target="_blank" rel="nopener noreferer nofolow"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <input type="checkbox" class="profile__button" id="skills"> <label class="profile__button-label" for="skills" >X</label> </input>
+            <div class="profile__img-container">
+                <div class="profile__cortina">
+                    <p class="profile__frase">"Ninguna persona tiene el poder de tener todo lo que quiere, pero está en su poder no querer lo que no tiene, y poner alegremente en buen uso lo que tiene"</p>
+                    <p class="profile__autor">-Séneca</p>
+                </div>
+            </div>
+            <div class="profile__data-container">
+                <button class="abrirLen" id="abrirLen" style="display: none;"></button>
+                <label for="abrirLen" class="boton-abrirLen">
+                    <div class="profile__foto">
+                        <img src="Imagenes/FotoPerfil.jpg" alt="Imágen no encontrada" title="Click para un mensaje">
+                    </div>
+                </label>
+                <h3 class="SobreMi_titulo">Sobre mi:</h3>
+                <div class="profile__presentacion">
+                    <p><b style="font-size: xx-large;">E</b>studiante de física en proceso de titulación, de la Facultad de Ciencias UNAM. Realicé mi servicio social y trabajo de tesis de licenciatura en el Instituto de Física de la UNAM.
+                    <br><br>
+                    Mi formación académica me ha dotado de una sólida base en análisis matemático y pensamiento crítico, habilidades esenciales para abordar desafíos de cualquier índole.
+                    <br><br>
+                    Estoy familiarizado con el análisis de datos y actualmente estoy interesado en los fundamentos y aplicaciones del Machine Learning y Deep Learning.
+                    </p>
+                </div>
+                <div class="profile__cv">
+                    <a id="cv" href="" target="_blank" rel="nopener noreferer nofollow" title="ver currículum de JL.Lucho Cervantes"><p class="material-symbols-outlined" id="cv_icono">Description</p></a>
+                </div>
+                <div><a class="curriculum" href="Documentos/JL_LuchoCV.pdf" target="_blank" rel="nopener noreferer nofollow" title="ver currículum de JL.Lucho Cervantes">Currículum </a></div>
+            </div>
+        </div>
+        <div class="lenguajes" id="lenguajes">
+            <button class="cerrarLen" type="button" title="cerrar" id="cerrarLen" style="display: none;"></button>
+        <label for="cerrarLen" class="boton-cerrarLen" title="Cerrar mensaje">X</label>
+            <h3 style="margin: 0;">Habilidades:</h3>
+            <div class="lenguajes-contenedor">
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje1"><label for="lenguaje1" class="lenguaje-label">
+                    <img width=40 height=40 title='Python' src="https://skillicons.dev/icons?i=py"/>
+                </label>
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje2"><label for="lenguaje2" class="lenguaje-label">
+                    <img width=40 height=40 title='R' src="https://skillicons.dev/icons?i=r"/>
+                </label>
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje3"><label for="lenguaje3" class="lenguaje-label">
+                    <img width=40 height=40 title='C++' src="https://skillicons.dev/icons?i=cpp"/>
+                </label>
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje4"><label for="lenguaje4" class="lenguaje-label">
+                    <img width=40 height=40 title='Fortran' src="https://skillicons.dev/icons?i=fortran"/>
+                </label>
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje5"><label for="lenguaje5" class="lenguaje-label">
+                    <img width=40 height=40 title='Látex' src="https://skillicons.dev/icons?i=latex"/>
+                </label>
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje6"><label for="lenguaje6" class="lenguaje-label">
+                    <img width=40 height=40 title='HTML' src="https://skillicons.dev/icons?i=html"/>
+                </label>
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje7"><label for="lenguaje7" class="lenguaje-label">
+                    <img width=40 height=40 title='CSS' src="https://skillicons.dev/icons?i=css"/>
+                </label>    
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje8"><label for="lenguaje8" class="lenguaje-label">
+                    <img width=40 height=40 title='Javascript' src="https://skillicons.dev/icons?i=js"/>
+                </label>    
+                </label>    
+                <input type="radio" name="lenguaje-selector" class="radius" id="lenguaje9"><label for="lenguaje9" class="lenguaje-label">
+                    <img width=40 height=40 title='SQLite' src="https://skillicons.dev/icons?i=sqlite"/>
+                </label>    
+            </div> 
+            <div id="exp"></div>
+            <div class="lenguaje-barra-contenedor">
+                <div class="lenguaje-barra" id="lenguaje-barra"></div>
+            </div>
+            <div class="lenguaje-mensaje">
+                <div class="lenguaje-mensajeTitulo">Detalles</div>
+                <div class="lenguaje-mensajeContenido" id="mensajeTitulo"></div>
+            </div>
+        </div>
+    </main>
+    <section class="portafolio" id="portafolio" >
+            <div class="estrella-container automostrar">
+                <h2 class="portafolio__title automostrar"  style="color:#ffffff;">Portafolio</h2>
+                <div class="estrellita"></div>
+            </div>
+        <div class="portafolio__project-container automostrar" style="--width: min(31%, 370px); --height:370px; --cantidad:4;">
+            <div class="portafolio__list">
+                <div class="portafolio__project" style="background-image: url(Imagenes/Simulacion.png); --posicion:1;">
+                    <h2 class="portafolio__project-name"><a href="DataScience.html" class="portafolio__link link__data"  rel="nopener noreferer nofolow" title="Ir a Proyectos de Data Science" style="font-size: 2.2rem;">Data science</a></h2>
+                </div>
+                <div class="portafolio__project" style="background-image: url(Imagenes/NotasImagen.jfif); --posicion:2;">
+                    <h2 class="portafolio__project-name" ><a href="notas.html" class="portafolio__link"  rel="nopener noreferer nofolow" title="Ir al sitio de Notas" style="font-size: 2.2rem; font-family: serif;">Sitio de Notas</a></h2>
+                </div>
+                <div class="portafolio__project" style="background-image: url(Imagenes/Esfera2.jfif); --posicion:3;">
+                    <h2 class="portafolio__project-name" ><a href="sitioCSS.html" class="portafolio__link"  rel="nopener noreferer nofolow" title="Ir al la librería" style="font-size: 1.5rem;
+                    font-family: 'Rock Salt', cursive;  font-weight: bolder;font-style: normal"> Librería CSS</a></h2>
+                </div>
+                <div class="portafolio__project" id="fisica_cont" style="background-image: url(Imagenes/fisica2.jfif);--posicion:4;">
+                    <h2 class="portafolio__project-name" ><a href="#fisica_cont" id="fisica" class="portafolio__link"  rel="nopener noreferer nofolow" title="Sitio en desarrollo" style="font-size: 2.2rem;">Física</a></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form" id="form">
+        <div class="estrella-container automostrar">
+            <h2 class="portafolio__title automostrar"  style="color:#ffffff;">Contacto</h2>
+            <div class="estrellita"></div>
+        </div>
+        <form action="" class="form__form automostrar">
+            <div class="form__input-container"><label>Nombre<input placeholder="John" type="text"></label></div>
+            <div class="form__input-container"><label>Apellido<input placeholder="Petrucci" type="text"></label></div>
+            <div class="form__input-container form__input-grande"><label>Correo<input placeholder="johnpetrucci@dreamtheater.com" type="mail"></label></div>
+            <div class="form__input-container form__input-grande"><label>Mensaje <textarea placeholder="Preguntas, quejas, sugerencias... "></textarea></label></div>
+            <div class="input__submit-animation form__input-grande"></div>
+            <div class="form__input-container form__animation-container form__input-grande"><label id="animation_submit"><input placeholder="Enviar" type="submit" class="submit-button"></label></div>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footerTop">
+            <div class="container">
+                <div class="firstCol">
+                    <a href="#" class="redes_footer">Redes sociales</a>
+                    <ul class="icons">
+                        <li><a class="redes_footer" href="https://www.linkedin.com/in/jorge-luis-lucho-cervantes-804b30323/" target="_blank" rel="nopener noreferer nofolow"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a class="redes_footer" href="https://github.com/JorgeLuchogit" target="_blank" rel="nopener noreferer nofolow"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a class="redes_footer" href="https://facebook.com/jorge.cmg?mibextid=ZbWKwL" target="_blank" rel="nopener noreferer nofolow"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a class="redes_footer" href="https://www.instagram.com/jllucho?igsh=MXBzeHNkMmtsNTZxaQ==" target="_blank" rel="nopener noreferer nofolow"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="secondCol">
+                    <ul class="menu">
+                        <li><h4>Sitio</h4></li>
+                        <li><a href="#profile" title="Inicio" id="homeLinkFoot">Inicio</a></li>
+                        <li><a href="#profile" title="Sobre mi" id="SobreMiLinkFoot">Sobre mi</a></li>
+                        <li><a href="#portafolio">portafolio</a></li>
+                        <li><a href="#form">Contacto</a></li>
+                    </ul>
+                    <ul class="menu">
+                        <li><h4>Proyectos</h4></li>
+                        <li><a href="DataScience.html" target="_blank" rel="nopener noreferer nofolow" title="Ir a Proyectos de Data Science">Proyectos de data science</a></li>
+                        <li><a href="notas.html" target="_blank" rel="nopener noreferer nofolow" title="Ir al sitio de Notas">Sitio de notas</a></li>
+                        <li><a href="sitioCSS.html"  target="_blank" rel="nopener noreferer nofolow" title="Ir al la librería">Librería de CSS</a></li>
+                        <li><a href="#">Sitio sobre Física</a></li>
+                    </ul>
+                    <ul>
+                        <li><h4>información de contacto</h4></li>
+                        <li><address>Cuatitlán izcalli edo. Méx. México</address></li>
+                        <li><a href="mailto:" title="Correo de contacto">jllcmaf6@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="thirdCol">
+                    <h4 style="text-transform: none;">JL-Lucho Cervantes</h4>
+                    <p style="hyphens: auto; text-align: justify;">El presente sitio web fué Hecho en México por Jorge Luis Lucho Cervantes. Todas las imágenes (salvo la del proyecto Data science, en el portafolio) fueron generadas a través de Microsoft Copilot. Un agradecimiento especial a Ale por su apoyo y paciencia</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <p>&copy; 2024 <strong>JL-Lucho Cervantes</strong> - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JL-LuchoC.js"></script>
+</body>
+</html>

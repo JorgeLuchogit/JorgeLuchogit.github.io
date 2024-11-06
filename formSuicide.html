@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noimageindex noindex noarchive nosnippet nofollow">
+    <link rel="icon" href="Imagenes/Logo_icono.png" type="=image/png">
+    <link rel="stylesheet" href="formSuicide.css">
+    <title>Clasificación solicitudes de crédito</title>
+</head>
+<body>
+    <form id="predictionForm">
+        <div class="boxtext_form">
+            <label class="e_form" for="tweet">Texto a analizar</label>
+            <textarea class="t1" placeholder="Ingresar post, tweet, frase ..." id="tweet"></textarea>
+        </div>        
+        <input type="checkbox" name="checkbox_result" id="button_input" style="display: none;">
+        <label for="button_input"></label><div id="button_result">Analizar</div></label>
+    </form>
+    <div id="window_result">
+        <label title="cerrar"  for="button_input_close"></label>
+        <div class="close_window_button" id="close_result">
+        <input type="checkbox" style="display: none;" name="checkbox_result_close" id="button_input_close">
+            x
+        </div>
+        </label>
+        <div class="result_content">
+            <div class="content_message">
+                El texto: ... <br> Es clasificado como ... <br> Se recomienda ...
+            </div>
+            <div class="content_scores">
+                <div class="scores_title">
+                    Rates
+                </div>
+                <div class="scores_scores">
+                    <div class="score">Acertar: <br> 90%</div>
+                    <div class="score">Falso positivo: <br> 10%</div>
+                    <div class="score">Falso negativo: <br> 10%</div>
+                </div>
+            </div>
+        </div>
+        <div class="options">
+            <div class="options_message">  Ayudenos a Mejorar <br> ¿Consideran usted que el diagnóstico es acertado?</div>
+            <div class="option_options">
+                <div class="options_si">Si</div>
+                <div class="options_no">No</div>
+            </div>
+        </div>
+    </div>
+    <script src="formSuicide.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noimageindex noindex noarchive nosnippet nofollow">
+    <link rel="stylesheet" href="notas.css">
+    <link rel="icon" href="Imagenes/Logo_icono.png" type="=image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Notas de cursos</title>
+</head>
+<body>
+    <div class="titulo">
+        <div class="tituloPrincipal">
+            <h1>Notas relacionadas con la programación</h1>
+        </div>
+        <div class="tituloTexto">
+            Este sitio cuenta con notas que he ido escribiendo a lo largo del tiempo sobre programación matemáticas y física. <br><br> Las notas no son para nada formales y no buscan sustituir a la documentación o al material original. 
+        </div>
+        <div class="img-fondo">
+            <img src="Imagenes/esfera3.jfif" alt="" title="imagen generada por Microsoft Copilot">
+        </div>
+    </div>
+    <div class="banner">
+        <div class="slider" style="--quantity: 5">
+            <div class="logo_center_div">
+                <img id="logo_center" src="Imagenes/Logom.png" style="width: 100%;" alt="Icono">
+                <p>JL-Lucho Cervantes</p>
+            </div>
+            <p class="slider_row" id="first_slider_row">&lt;&lt;</p>
+            <div class="item" style="--position: 1">
+                <input type="radio" name="pestaña-info" class="checkbox" id="check1" style="--position: 1">
+                <label for="check1">
+                    <div class="img-container" title="Ver descripción de las notas">
+                        <img id="py" src="Imagenes/python-logo.png" alt="">                        
+                    </div>
+                </label>
+            </div>
+            <div class="item" style="--position: 2">
+                <p class="slider_row">&lt;&lt;</p>
+                <input type="radio" name="pestaña-info" class="checkbox" id="check2">
+                <label for="check2">
+                    <div class="img-container" title="Ver descripción de las notas">
+                        <img class="html" id="htmlcss" src="Imagenes/htmlcss.png" alt="">
+                    </div>
+                </label>
+            </div>
+            <div class="item" style="--position: 3">
+                <p class="slider_row">&lt;&lt;</p>
+                <input type="radio" name="pestaña-info" class="checkbox" id="check3">
+                <label for="check3">
+                    <div class="img-container" title="Ver descripción de las notas">
+                        <img class="sql" id="sql" src="Imagenes/sql.png" alt="">
+                    </div>
+                </label>
+            </div>
+            <div class="item" style="--position: 4">
+                <p class="slider_row">&lt;&lt;</p>
+                <input type="radio" name="pestaña-info" class="checkbox" id="check4">
+                <label for="check4">
+                    <div class="img-container" title="Ver descripción de las notas" id="git-container">
+                        <img id="git" src="Imagenes/git.png" alt="">
+                        <img class="github" id="github" src="Imagenes/github.png" alt="">
+                    </div>
+                </label>
+            </div>
+            <div class="item"  style="--position: 5">
+                <p class="slider_row" id="last_slider_row">&gt;&gt;</p>
+                <input type="radio" name="pestaña-info" class="checkbox" id="check5">
+                <label for="check5">
+                    <div class="img-container" id="modep" title="Ver descripción de las notas"id="git-container">
+                        Modelación epidemiológica
+                    </div>
+                </label>
+            </div> 
+        </div>
+    </div>
+    <div class="informacion" id="inf">
+        <button class="cerrar" id="cerrar" type="reset" style="display: none;" title="Cerrar descripción"></button>
+        <label for="cerrar" class="boton-cerrar" title="Cerrar descripción">X</label>
+        <div class="descripcion-imagen" id="descripcion-imagen">       
+        </div>
+        <div class="descripcion"> 
+            <div class="descripcionTitulo">
+                Descripción:
+            </div>
+            <div class="descripcionContenido" id="descripcionContenido">
+            </div>
+        </div>
+        <a class="enlace-notas" id="enlace-notas" href="" target="_blank" rel="nopener noreferer nofolow" title="Visualizar PDF">
+            ver notas <p class="material-symbols-outlined" id="doc-icon" >description</p>
+        </a>
+    </div>
+    <div class="regreso">
+        <a id="regreso-icono" href="index.html"  rel="nopener noreferer nofolow" title="Ir a la página principal">
+            <p class="material-symbols-outlined">home</p>
+        </a>
+    </div>
+    <script src="notas.js" ></script>
+</body>
+</html>
